@@ -6,21 +6,41 @@
     <title>Forms</title>
 </head>
 <body>
-    <form action="/form-processor.php" method="POST">
+    <a href="mailto:andriy.drobenyuk@gmail.com?subject=hello&body=World">Send me mail</a>
+    <a href="tel:+380670001122">Call me</a>
+    <form action="/english.html" method="GET">
         <div>
             <label>Subject:</label>
             <input type="text" name="subject">
         </div>
         <div>
-            <label>Password:</label>
-            <input type="password" name="user-passoword"> 
-        </div>
-        <div>
             <label>Body:</label>
             <textarea name="body"></textarea>
         </div>
+        <div>
+            <label>Pick you favorite drink:</label>
+            <br>
+            <label for="uid-1">
+                Coke
+                <input type="radio" name="drink" id="uid-1" value="Coke" />
+            </label>
+            <label for="uid-2">
+                Coffe
+                <input type="radio" name="drink" id="uid-2" value="Coffe" />
+            </label>
+            <label for="uid-3">
+                Tea
+                <input type="radio" name="drink" id="uid-3" value="Tea" />
+            </label>
+        </div>
+        <div>
+            <label for="uid-xxx">
+                <input type="checkbox" name="agree" />
+                I agree
+            </label>
+        </div>
         <button type="submit">Submit</button>
-        <button type="reset">Clear</button>
+        <input style="color: blue; width: 100px;" type="reset" value="Reset"/>
     </form>
 </body>
 </html>
